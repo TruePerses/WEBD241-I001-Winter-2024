@@ -12,28 +12,31 @@
 
     <form id="assignment6Form">
 
-        <label for="First Name">First Name:</label>
-        <input type="text" name="First Name">
+        <label for="First_Name">First Name:</label>
+        <input type="text" name="First_Name" id="First_Name">
 
-        <label for="Last Name">Last Name:</label>
-        <input type="text" name="Last Name">
+        <label for="Last_Name">Last Name:</label>
+        <input type="text" name="Last_Name" id="Last_Name">
 
         <br><br>
 
         <label for="Email">Email:</label>
-        <input type="email" name="Email" required pattern=".+@mycampus.apus.edu">
+        <input type="email" name="Email" id="Email" required pattern=".+@mycampus.apus.edu">
         <p>example@mycampus.apus.edu</p>
 
         <br><br>
 
-        <label for="subject">What is your favorite subject?</label>
-        <select name="subject" id="subject">
+        <label for="Favorite_Subject">What is your favorite subject?</label>
+        <select name="Favorite_Subject" id="Favorite_Subject">
+            <option value="">Select a Subject</option>
             <option value="math">Math</option>
-            <option value="science">science</option>
+            <option value="science">Science</option>
             <option value="history">History</option>
             <option value="english">English</option>
             <option value="physicalEducation">Physical Education</option>
         </select>
+
+        <br><br>
 
         <input type="submit" value="Submit" onclick="return checkForm()">
     </form>
