@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet"  type="text/css" href="Assignment7.css">
+</head>
+<body>
+
+    <h1>Jason Dickerson</h1>
+    <hr>
+
+    <script>
+        <!--
+            
+            let myColor = prompt("Please enter a hexadecimal color code (must be 6 characters, including 0 thru 9 and A thru F):");
+            let myAge = prompt("Please enter your age:");
+            let keepCookie = confirm("A cookie will be set. Is this ok?");
+            
+            //sets default of color prompt to a default color if none or invaild hex code is entered
+            if (myColor === null || myColor === "" || myColor.length < 6 || myColor.length > 6) {
+                myColor = "ffb3b3";
+            }
+
+            //sets age to default of n/a if canceled or not entered
+            if (myAge === null || myAge === "") {
+                myAge = "n/a";
+            }
+
+            if (keepCookie) {
+                let expireDate = new Date();
+                let color = "#" + myColor;
+                let personAge = myAge;
+
+                // adds 30 days from the current day for expiration date
+                expireDate.setDate(expireDate.getDate() + 30);
+                
+                document.cookie = "bgAgeCookie=YColor=" + color + " Age=" + personAge + ";expires=" + expireDate.toUTCString();
+                
+                //changes backgound color and alerts cookie settings
+                document.body.style.backgroundColor = color;
+                alert("Cookie set.");
+                alert("Your background color will be: " + color);
+                alert("Your age is: " + personAge);
+
+                //displays the cookie settings
+                document.write("Your background color is: " + color + "<br />");
+                document.write("Your age is: " + personAge + "<br />");
+                document.write("The cookie was set!<br>");
+                document.write("Cookie contents: " + document.cookie);
+            } else {
+                // deletes cookie if canceled and displays it was not set
+                document.cookie = "bgAgeCookie=;expires=Wed, 20 Mar 2024 00:00:00 UTC";
+                alert("Cookie deleted.");
+                document.write("The cookie was not set!");
+            }
+
+            
+        -->
+    </script>
+    
+</body>
+</html>
