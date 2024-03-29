@@ -10,6 +10,23 @@
     <h1>Jason Dickerson</h1>
     <hr>
 
+    <nav class="navbar">
+        <label for="navDropDown" id="label">Pick an Assignment</label>
+        <select name="navDropDown" id="navDropDown">
+            <option value="../Week 8 Assignment/DickersonJasonFinalProject"></option>
+            <option value="../Week 8 Assignment/DickersonJasonFinalProject">Home</option>
+            <option value="../Week 1 Assignment/DickersonJasonAssignment1">Assignment 1</option>
+            <option value="../Week 2 Assignment/DickersonJasonAssignment2">Assignment 2</option>
+            <option value="../Week 3 Assignment/DickersonJasonAssignment3">Assignment 3</option>
+            <option value="../Week 4 Assignment/DickersonJasonAssignment4">Assignment 4</option>
+            <option value="../Week 5 Assignment/DickersonJasonAssignment5">Assignment 5</option>
+            <option value="../Week 6 Assignment/DickersonJasonAssignment6">Assignment 6</option>
+            <option value="../Week 7 Assignment/DickersonJasonAssignment7">Assignment 7</option>
+        </select>
+    </nav>
+
+    <br><br>
+
     <form id="assignment6Form">
 
         <label for="First_Name">First Name:</label>
@@ -41,6 +58,7 @@
         <input type="submit" value="Submit" onclick="return checkForm()">
     </form>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         <!--
             
@@ -66,6 +84,16 @@
                 return true;
             }    
 
+            $(document).ready(function() {
+            $('#navDropDown').change(function() {
+                var selectedValue = $(this).val();
+                if (selectedValue !== "../Week 6 Assignment/DickersonJasonAssignment6.html") {
+                    window.location.href = selectedValue + ".html";
+                } else {
+                    window.location.href = "../Week 6 Assignment/DickersonJasonAssignment6.html";
+                }
+            });
+        });
         -->
     </script>
 </body>

@@ -9,3 +9,27 @@ h1 {
 form {
     text-align: center;
 }
+
+#label {
+    font-size: x-large;
+    background-color: #ff4400;
+    font-weight: bolder;
+    box-shadow: 0 0 5px 5px black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#navDropDown {
+    display: none;
+}
+
+.navbar:hover #navDropDown {
+    display: block;
+}
+
+.navbar:hover label {
+    display: none;
+}
